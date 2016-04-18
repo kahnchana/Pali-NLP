@@ -15,3 +15,4 @@ Lists of endings for each word class are generated separately, and those endings
 are compared with the word. If matching, the word is stemmed.
 A list of possible stems is returned. Mostly, each separate case returns the same
 stem. This method improves accuracy of stemming.  
+
