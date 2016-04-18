@@ -1,4 +1,4 @@
-#Stemmer
+# Stemmer
 
 The stemmer provides the stem of an input pali word. 
 
