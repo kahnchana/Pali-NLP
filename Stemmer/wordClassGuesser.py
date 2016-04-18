@@ -47,4 +47,3 @@ def guessWordClassFromWord(word,guesses=[]):
 
 
     return False
-
