@@ -35,5 +35,6 @@ def stem(word,out=[]):
         out1.add(stemRecursive(word,endings))
     out=list(out1)
     return out
-
+    
+    
         
