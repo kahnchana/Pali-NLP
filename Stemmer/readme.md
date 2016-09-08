@@ -1,6 +1,6 @@
 # Stemmer
 
-The stemmer outputs the stemme version of an input pali sentence. The API is Pali-NLP-Stemmer-wordClassStemmer.stem()  
+The stemmer outputs the stemme version of an input pali sentence. The API is Pali-NLP/Stemmer/wordClassStemmer.stem()  
 
 ```shell
 import wordClassStemmer
