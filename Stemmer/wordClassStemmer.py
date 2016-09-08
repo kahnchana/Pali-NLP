@@ -21,7 +21,7 @@ def stemRecursive(word,ends):
 
 #final algorithm to stem a given word
 #returns the stemmed word
-def stem(word,out=[]):
+def stemOne(word,out=[]):
     out=[]
     wordClasses=(wcg(word))
     if (len(wordClasses) == 0):
@@ -36,5 +36,12 @@ def stem(word,out=[]):
     out=list(out1)
     return out
     
-    
-        
+#final algorithm to stem a sentence
+#returns the stemmed sentence
+def stem(sentence):
+    inp=sentence.split()
+    out=''
+    for i in range(len(inp)):
+        out+=stemOne(inp[i])[0]+' '
+    return out.strip()
+
