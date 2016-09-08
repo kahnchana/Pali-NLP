@@ -2,7 +2,7 @@
 
 The stemmer provides the stem of an input pali word. 
 
-'''shell
+```shell
 import wordClassStemmer
 
 sentence='Eva.m me suta.m - eka.m samaya.m bhagavaa antaraa ca raajagaha.m antaraa ca naa.landa.m addhaanamaggappa.tipanno hoti mahataa bhikkhusa"nghena saddhi.m pa~ncamattehi bhikkhusatehi. Suppiyopi kho paribbaajako antaraa ca raajagaha.m antaraa ca naa.landa.m addhaanamaggappa.tipanno hoti saddhi.m antevaasinaa brahmadattena maa.navena.'
@@ -12,7 +12,7 @@ Out[48]: 'Ev  sut -  samay bhagav antar c raajagah antar c naa.land addhaanamagg
 
 wordClassStemmer.stem('namo thassa bhagavato arahatho sammasambhuddhassa')
 Out[49]: 'nam th bhagav arahath sammasambhuddh'
-'''
+```
 
 
 It involves a few steps. 
