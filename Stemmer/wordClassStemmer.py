@@ -2,14 +2,12 @@
 
 import sys
 sys.path.insert(0, './endings')
-import regularEndings
 import wordClassGuesser
 import endings
 
 wcg=wordClassGuesser.guessWordClassFromLemma
 retainEndings=endings.retainEndings
-
-
+exceptions=list('-_(){}[]?!–')
 #recursive function to keep stemming a word
 def stemRecursive(word,ends):
     for end in ends:
@@ -35,13 +33,16 @@ def stemOne(word,out=[]):
         out1.add(stemRecursive(word,endings))
     out=list(out1)
     return out
-    
+
 #final algorithm to stem a sentence
 #returns the stemmed sentence
 def stem(sentence):
     inp=sentence.split()
     out=''
     for i in range(len(inp)):
-        out+=stemOne(inp[i])[0]+' '
+        if inp[i] in exceptions:
+            out+=inp[i]
+        else:
+            out+=stemOne(inp[i])[0]+' '
     return out.strip()
 
