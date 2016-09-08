@@ -1,6 +1,6 @@
 # Stemmer
 
-The stemmer provides the stem of an input pali word. 
+The stemmer outputs the stemme version of an input pali sentence. The API is Pali-NLP-Stemmer-wordClassStemmer.stem()  
 
 ```shell
 import wordClassStemmer
@@ -15,7 +15,7 @@ Out[49]: 'nam th bhagav arahath sammasambhuddh'
 ```
 
 
-It involves a few steps. 
+The process involves a few steps. 
 
 The word class (noun, verb, adj....) of the input word is checked first.
 The same word may belong to multiple word classes.
